@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C79816B1-5732-4DB4-A6D3-82535BE9303E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SatellitePower</RootNamespace>
+    <AssemblyName>SatellitePower</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>bin\Debug\Plugins\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaForm.Designer.cs">
+      <DependentUpon>AreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\FCM_VVnum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\FCM_VVnum.Designer.cs">
+      <DependentUpon>FCM_VVnum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmFXCloudType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmFXCloudType.Designer.cs">
+      <DependentUpon>frmFXCloudType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmFXCloudTypeDBSCAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmFXCloudTypeDBSCAN.Designer.cs">
+      <DependentUpon>frmFXCloudTypeDBSCAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmFXLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmFXLine.Designer.cs">
+      <DependentUpon>frmFXLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmFXRect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmFXRect.Designer.cs">
+      <DependentUpon>frmFXRect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmFXSelWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmFXSelWay.Designer.cs">
+      <DependentUpon>frmFXSelWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmLogicOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmLogicOperation.Designer.cs">
+      <DependentUpon>frmLogicOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmMapAttr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmMapAttr.Designer.cs">
+      <DependentUpon>frmMapAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\FrmSelectYT_Single.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\FrmSelectYT_Single.Designer.cs">
+      <DependentUpon>FrmSelectYT_Single.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmSelYJF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmSelYJF.Designer.cs">
+      <DependentUpon>frmSelYJF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmSetTrackBarVal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmSetTrackBarVal.Designer.cs">
+      <DependentUpon>frmSetTrackBarVal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmATimeSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmATimeSel.Designer.cs">
+      <DependentUpon>frmATimeSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFYParaSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFYParaSet.Designer.cs">
+      <DependentUpon>frmFYParaSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PubUnitWind\AnalyCloudWind.cs" />
+    <Compile Include="PubUnitWind\AnalyContour.cs" />
+    <Compile Include="PubUnitWind\AnalyFog.cs" />
+    <Compile Include="PubUnitWind\AnalyFog2.cs" />
+    <Compile Include="PubUnitWind\AnalyIce.cs" />
+    <Compile Include="PubUnitWind\AnalyThunderStorm.cs" />
+    <Compile Include="PubUnitWind\CDZXFileInfo.cs" />
+    <Compile Include="PubUnitWind\CHWFileInfo.cs" />
+    <Compile Include="PubUnitWind\CJBFileInfo.cs" />
+    <Compile Include="PubUnitWind\CLBFileInfo.cs" />
+    <Compile Include="PubUnitWind\CloudWind3.cs" />
+    <Compile Include="PubUnitWind\ICloudWindMaking.cs" />
+    <Compile Include="PubUnitWind\CloudWindUtil.cs" />
+    <Compile Include="PubUnitWind\CYJFFileInfo.cs" />
+    <Compile Include="PubUnitWind\RandomExt.cs" />
+    <Compile Include="PubUnitWind\WindRecord.cs" />
+    <Compile Include="PubUnit\BCDUnit.cs" />
+    <Compile Include="PubUnit\BilinearInterp.cs" />
+    <Compile Include="PubUnit\CMapInfo.cs" />
+    <Compile Include="PubUnit\ConfigAppSettings.cs" />
+    <Compile Include="PubUnit\CSecFileInfo.cs" />
+    <Compile Include="PubUnit\CSivFileInfo.cs" />
+    <Compile Include="PubUnit\CSysConfig.cs" />
+    <Compile Include="formChart\frmChart1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChart\frmChart1.Designer.cs">
+      <DependentUpon>frmChart1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formChart\FrmChart2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChart\FrmChart2.Designer.cs">
+      <DependentUpon>FrmChart2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formChart\FrmChart3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChart\FrmChart3.Designer.cs">
+      <DependentUpon>FrmChart3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSys\frmPallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSys\frmPallet.Designer.cs">
+      <DependentUpon>frmPallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPathSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPathSet.Designer.cs">
+      <DependentUpon>frmPathSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PubUnit\BitAssist.cs" />
+    <Compile Include="PubUnit\CSysParams.cs" />
+    <Compile Include="PubUnit\CViewParams.cs" />
+    <Compile Include="PubUnit\InitMap.cs" />
+    <Compile Include="PubUnit\MatrixComputer.cs" />
+    <Compile Include="PubUnit\PubUnit.cs" />
+    <Compile Include="PubUnit\OutVissrUnit.cs" />
+    <Compile Include="PubUnit\UnitGrid.cs" />
+    <Compile Include="PubUnit\WRFileUnit.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\BaseMapList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\BaseMapList.designer.cs">
+      <DependentUpon>BaseMapList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\DeleteAirspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UControl\DeleteAirspace.Designer.cs">
+      <DependentUpon>DeleteAirspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\MapFileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\MapFileList.Designer.cs">
+      <DependentUpon>MapFileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\SaveMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UControl\SaveMode.Designer.cs">
+      <DependentUpon>SaveMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\UCTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UCTrackBar.Designer.cs">
+      <DependentUpon>UCTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PubUnit\UserConfig.cs" />
+    <EmbeddedResource Include="AreaForm.resx">
+      <DependentUpon>AreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChart\frmChart1.resx">
+      <DependentUpon>frmChart1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChart\FrmChart2.resx">
+      <DependentUpon>FrmChart2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChart\FrmChart3.resx">
+      <DependentUpon>FrmChart3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\FCM_VVnum.resx">
+      <DependentUpon>FCM_VVnum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmFXCloudType.resx">
+      <DependentUpon>frmFXCloudType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmFXCloudTypeDBSCAN.resx">
+      <DependentUpon>frmFXCloudTypeDBSCAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmFXLine.resx">
+      <DependentUpon>frmFXLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmFXRect.resx">
+      <DependentUpon>frmFXRect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmFXSelWay.resx">
+      <DependentUpon>frmFXSelWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmLogicOperation.resx">
+      <DependentUpon>frmLogicOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmMapAttr.resx">
+      <DependentUpon>frmMapAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmPallet.resx">
+      <DependentUpon>frmPallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmSelYJF.resx">
+      <DependentUpon>frmSelYJF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmSetTrackBarVal.resx">
+      <DependentUpon>frmSetTrackBarVal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSys\frmATimeSel.resx">
+      <DependentUpon>frmATimeSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFYParaSet.resx">
+      <DependentUpon>frmFYParaSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPathSet.resx">
+      <DependentUpon>frmPathSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\BaseMapList.resx">
+      <DependentUpon>BaseMapList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\DeleteAirspace.resx">
+      <DependentUpon>DeleteAirspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\MapFileList.resx">
+      <DependentUpon>MapFileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\SaveMode.resx">
+      <DependentUpon>SaveMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UCTrackBar.resx">
+      <DependentUpon>UCTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh.bmp" />
+    <Content Include="Resources\Refresh1.bmp" />
+    <Content Include="Resources\Refresh2.bmp" />
+    <None Include="Resources\北航气象最终_25.png" />
+    <None Include="Resources\copy.bmp" />
+    <Content Include="main.ico" />
+    <None Include="Resources\icon100_com_30.png" />
+    <Content Include="Resources\openN.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\printView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginPro\MapCtrl\MapCtrls.csproj">
+      <Project>{E6CF6BEF-7C72-434E-9587-389C7A70EC7F}</Project>
+      <Name>MapCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginPro\PluginSdk\PluginSdk.csproj">
+      <Project>{A34AF765-E91D-46B2-A457-5525AE0E5341}</Project>
+      <Name>PluginSdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginPro\ReaderViss\ReaderViss.csproj">
+      <Project>{F274323D-6C2E-4285-BE9F-CE1BB0672EA0}</Project>
+      <Name>ReaderViss</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
